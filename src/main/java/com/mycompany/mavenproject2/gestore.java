@@ -17,12 +17,15 @@ public class gestore {
         int scelta;
 
         do {
+            System.out.println("Digita 0 per rimuovere il primo elemento");
             System.out.println("Digita 1 per aggiungere un cliente");
             System.out.println("Digita 2 per stampare la coda");
             System.out.println("Digita 3 per uscire dal programma");
             scelta = s.nextInt();
 
             switch (scelta) {
+                case 0 ->
+                    coda.Rimuoviintesta();
                 case 1 -> {
                     System.out.println("Come si chiama il cliente?");
                     cliente = s.next();
