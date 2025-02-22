@@ -31,9 +31,8 @@ public class Coda {
         if (codaClienti.size() == 0) {
             System.out.println("impossibile nessun paziente in coda\n");
         }else{
-            for (int i = 1; i < codaClienti.size(); i++) {
-            System.out.println(codaClienti.get(i) + " ");
+            codaClienti.remove(0);
         }
         }
     }
-}
+
