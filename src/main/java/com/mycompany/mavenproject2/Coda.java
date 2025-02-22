@@ -11,13 +11,29 @@ import java.util.ArrayList;
  * @author asocc
  */
 public class Coda {
+
     private ArrayList<String> codaClienti = new ArrayList<>();
-    public void aggiungiCliente(String cliente){
+
+    public void aggiungiCliente(String cliente) {
         codaClienti.add(cliente);
     }
-    public void stampacoda(){
+
+    public void stampacoda() {
         for (int i = 0; i < codaClienti.size(); i++) {
             System.out.println(codaClienti.get(i));
         }
+        if (codaClienti.size() == 0) {
+            System.out.println("La coda e' vuota");
+        }
     }
- }
+
+    public void Rimuoviintesta() {
+        if (codaClienti.size() == 0) {
+            System.out.println("impossibile nessun paziente in coda\n");
+        }else{
+            for (int i = 1; i < codaClienti.size(); i++) {
+            System.out.println(codaClienti.get(i) + " ");
+        }
+        }
+    }
+}
